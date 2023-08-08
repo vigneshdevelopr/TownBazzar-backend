@@ -1,6 +1,6 @@
 {
     "version":2,
-    "name":"stackoverflow-data",
+    "name":"townbazzar",
     "builds" : [
         {
             "src": "./index.js",

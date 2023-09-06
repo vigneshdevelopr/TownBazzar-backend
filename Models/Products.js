@@ -1,17 +1,12 @@
 import mongoose from 'mongoose';
 
 const prodSchema = new mongoose.Schema({
-    id:{
-        type: Number,
-        required: true,
-        unique: true,
-    },
     title:{
         type:String,
         required: true
     },
     price:{
-        type:Number,
+        type:String,
         required: true
     },
     description:{
@@ -20,7 +15,6 @@ const prodSchema = new mongoose.Schema({
     },
     category:{
         type:String,
-        required: true
     },
     image:{
         type:String,

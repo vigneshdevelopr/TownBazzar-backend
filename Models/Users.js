@@ -15,7 +15,11 @@ const userSchema = new mongoose.Schema({
     password:{
         type: 'string',
         required: true,
-    }
+    },
+    cart:[{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'products'
+    }]
 })
 
 

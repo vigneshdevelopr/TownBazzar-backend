@@ -15,12 +15,12 @@ app.listen(port,()=>{
 })
 createConnection();
 
-
 app.use(express.json());
 app.use(cors());     
 app.use('/users',Register)
 app.use('/signin',LoginRouter)
 app.use('/products',ProdRouter)
+
 
 app.get('/',(req,res)=>{
 return res.status(200).json("Hey You Offically entered to access Town_Bazzar Database Backend Server")

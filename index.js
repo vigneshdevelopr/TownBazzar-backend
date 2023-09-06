@@ -5,6 +5,7 @@ import { Register } from "./Routes/Register.js";
 import cors from 'cors'
 import { LoginRouter } from "./Routes/Login.js";
 import { ProdRouter } from "./Routes/Products.js";
+import { PaymentRouter } from "./Routes/Razorpay.js";
 dotenv.config();
 const app = express();
 

@@ -36,4 +36,6 @@ return res.status(200).json(`Hey ${username}, welcome to Town Bazzar Family`)
 })
 
 
+
+
 export const Register = router;

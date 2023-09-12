@@ -9,11 +9,9 @@ import { PaymentRouter } from "./Routes/Razorpay.js";
 dotenv.config();
 const app = express();
 
-const port = process.env.port
+const PORT = process.env.PORT
 
-app.listen(port,()=>{
-    console.log(`Your Server has running on localhost ${port}`)
-})
+
 createConnection();
 
 app.use(express.json());
@@ -25,4 +23,8 @@ app.use('/products',ProdRouter)
 
 app.get('/',(req,res)=>{
 return res.status(200).json("Hey You Offically entered to access Town_Bazzar Database Backend Server")
+})
+
+app.listen(PORT,'0.0.0.0',()=>{
+    console.log(`Your Server has running on localhost ${port}`)
 })

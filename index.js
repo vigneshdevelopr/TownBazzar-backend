@@ -26,5 +26,5 @@ return res.status(200).json("Hey You Offically entered to access Town_Bazzar Dat
 })
 
 app.listen(PORT,'0.0.0.0',()=>{
-    console.log(`Your Server has running on localhost ${port}`)
+    console.log(`Your Server has running on localhost ${PORT}`)
 })
